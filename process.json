@@ -1,0 +1,19 @@
+{
+    apps: [
+        {
+            name: "dev-app",
+            script: "./app.js",
+            watch: true,
+            env: {
+                "NODE_ENV": "develop"
+            }
+        },
+        {
+            name: "app",
+            script: "./app.js",
+            env: {
+                "NODE_ENV": "production"
+            }
+        }
+    ]
+}
